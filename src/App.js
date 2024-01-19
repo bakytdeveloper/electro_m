@@ -1,42 +1,64 @@
-// App.js
-import React, { useState } from 'react';
-import Header from './components/Header';
+// import React, { useState } from 'react';
+// import Header from './components/Header/Header';
+// import About from './components/About';
+// import Services from './components/Services';
+// import Contact from './components/Contact';
+// import ModalGallery from './components/ModalGallery/ModalGallery';
+// import './App.css';
+//
+// function App() {
+//     const [modalIsOpen, setModalIsOpen] = useState(false);
+//     const openModal = () => setModalIsOpen(true);
+//     const closeModal = () => setModalIsOpen(false);
+//
+//     return (
+//         <div className="container">
+//             <Header openModal={openModal} />
+//             <About />
+//             <Services />
+//             <Contact />
+//             <ModalGallery isOpen={modalIsOpen} closeModal={closeModal} />
+//         </div>
+//     );
+// }
+//
+// export default App;
+
+
+
+import React, { useState, useEffect } from 'react';
+import Header from './components/Header/Header';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import './components/styles.css';
-import Modal from "./components/Modal";
+import Services from './components/Services/Services';
+import Contact from './components/Contact/Contact';
+import ModalGallery from './components/ModalGallery/ModalGallery';
+import './App.css';
+import Modal from 'react-modal';
+import Features from "./components/Features/Features";
 
-
-import placeholder1 from './images/placeholder1.jpg';
-import placeholder2 from './images/placeholder2.jpg';
-import placeholder3 from './images/placeholder3.jpg';
-import placeholder4 from './images/placeholder4.jpg';
-import placeholder5 from './images/placeholder5.jpg';
-
-const App = () => {
+function App() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const openModal = () => setModalIsOpen(true);
+    const closeModal = () => setModalIsOpen(false);
 
-    const openModal = () => {
-        setModalIsOpen(true);
-    };
-
-    const closeModal = () => {
-        setModalIsOpen(false);
-    };
+    // Установка корневого элемента для react-modal
+    useEffect(() => {
+        Modal.setAppElement('#root');
+    }, []);
 
     return (
-        <div>
+        <div className="container">
             <Header openModal={openModal} />
-            <main>
-                <About />
-                <Portfolio openModal={openModal} />
-                <Contact />
-            </main>
-            <Modal isOpen={modalIsOpen} closeModal={closeModal}
-                   images={[ placeholder1, placeholder2, placeholder3, placeholder4, placeholder5]} />
+
+            <Services />
+            <Features />
+            <Contact />
+            <ModalGallery isOpen={modalIsOpen} closeModal={closeModal} />
         </div>
     );
-};
+}
 
 export default App;
+
+
+

@@ -1,0 +1,110 @@
+/*.features {*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*    padding: 40px 20px;*/
+/*}*/
+
+/*.features h2 {*/
+/*    font-size: 2rem;*/
+/*    text-align: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.features-container {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.feature-item {*/
+/*    flex: 1;*/
+/*    padding: 20px;*/
+/*    background-color: #f8f8f8;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 10px;*/
+/*    margin: 10px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.feature-item img {*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*    border-radius: 10px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.feature-item p {*/
+/*    font-size: 1rem;*/
+/*    line-height: 1.4;*/
+/*}*/
+
+/*!* Add any additional styling as needed *!*/
+
+
+
+
+
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.features h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Luminari;
+    text-shadow: 2px 3px 3px gray;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+
+.checkmark {
+    position: relative;
+    bottom: 5px;
+    /*left: 50%;*/
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: green;
+}
+
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        width: 100%;
+    }
+}

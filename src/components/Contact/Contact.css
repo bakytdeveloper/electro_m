@@ -1,0 +1,55 @@
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone,
+.whatsapp {
+    margin: 0 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.phone a,
+.whatsapp span {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.phone a:hover,
+.whatsapp span:hover {
+    color: #007bff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .phone,
+    .whatsapp {
+        margin: 0;
+    }
+}
