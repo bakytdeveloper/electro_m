@@ -1,3 +1,4 @@
+
 /*.header {*/
 /*    position: relative;*/
 /*    height: 200px;*/
@@ -25,26 +26,47 @@
 
 /*nav {*/
 /*    margin-top: 20px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
 /*}*/
 
-/*nav a {*/
-/*    color: white;*/
-/*    text-decoration: none;*/
-/*    margin: 0 10px;*/
-/*    font-size: 16px;*/
+/*.contact-info {*/
+/*    display: flex;*/
+/*    align-items: center;*/
 /*}*/
+
 /*nav button {*/
+/*    font-weight: bold;*/
+
+/*}*/
+/*.portfolio {*/
+/*    font-size: 25px;*/
+/*}*/
+
+/*nav a, nav button {*/
+/*    display: inline-block; !* Или display: inline; *!*/
 /*    color: white;*/
 /*    text-decoration: none;*/
 /*    margin: 0 10px;*/
 /*    font-size: 16px;*/
 /*}*/
 
-/*nav a:hover {*/
+/*nav a:hover, nav button:hover, nav span:hover {*/
 /*    text-decoration: underline;*/
 /*}*/
 
-/*!*!* Add any additional styling as needed *!*!*/
+/*@media screen and (max-width: 600px) {*/
+/*    .header {*/
+/*        height: 250px;*/
+/*    }*/
+
+/*    nav {*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
+
+
 
 .header {
     position: relative;
@@ -71,27 +93,86 @@
     z-index: 1;
 }
 
-nav {
-    margin-top: 20px;
+.title-quote {
+    margin-bottom: 20px;
+
+    /*background: #dddddd;*/
+}
+
+.nav-container {
+    margin-top: 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    /*height: 60%;*/
+
+    /*background: #007bff;*/
 }
 
 .contact-info {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+
+    /*background: red;*/
 }
 
-nav a, nav button {
-    display: inline-block; /* Или display: inline; */
+.phone,
+.whatsapp {
+    cursor: pointer;
+    margin: 0 10px;
+    /*background: lightblue;*/
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+/*.btnPortfolio {*/
+/*    !*background: #22090c;*!*/
+
+/*    margin-top: 80px;*/
+/*    z-index: 1;*/
+/*    !*border: 2px solid red;*!*/
+/*    padding: 0;*/
+/*    box-sizing: content-box;*/
+/*    width: 450px;*/
+
+/*}*/
+
+.btnPortfolio {
+    margin: 0 auto;
+    margin-top: 80px;
+    z-index: 1;
+    width: 450px;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+nav button {
+    font-weight: bold;
+    margin-top: 30px; /* Увеличьте или уменьшите это значение по необходимости */
+}
+
+.portfolio {
+    font-size: 25px;
+    margin-top: 10px; /* Увеличьте или уменьшите это значение по необходимости */
+}
+
+nav a,
+nav span {
+    display: inline-block;
     color: white;
     text-decoration: none;
     margin: 0 10px;
     font-size: 16px;
 }
 
-nav a:hover, nav button:hover {
+nav a:hover,
+nav span:hover {
     text-decoration: underline;
 }
 
@@ -100,7 +181,11 @@ nav a:hover, nav button:hover {
         height: 250px;
     }
 
-    nav {
+    .nav-container {
         flex-direction: column;
+    }
+
+    .contact-info {
+        margin-bottom: 0;
     }
 }

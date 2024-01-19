@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /*.modal-gallery {*/
 /*    position: absolute;*/
 /*    top: 50%;*/
@@ -7,7 +13,90 @@
 /*    padding: 20px;*/
 /*    width: 80%;*/
 /*    max-width: 600px;*/
-/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+/*    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/
+/*}*/
+
+/*.modal-overlay {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    background: rgba(0, 0, 0, 0.8);*/
+/*    z-index: 10;*/
+/*}*/
+
+/*.modal-content {*/
+/*    position: relative;*/
+/*}*/
+
+/*.modal-header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.modal-header h2 {*/
+/*    margin: 0 auto;*/
+/*    font-size: 1.5rem;*/
+
+/*}*/
+
+/*.modal-header button {*/
+/*    background: none;*/
+/*    border: none;*/
+/*    font-size: 1.5rem;*/
+/*    cursor: pointer;*/
+/*    color: #333;*/
+/*}*/
+
+/*.modal-body img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    max-height: 400px;*/
+/*    object-fit: contain;*/
+/*    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+/*.modal-footer {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.modal-footer button {*/
+/*    background: #007bff;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    padding: 8px 12px;*/
+/*    cursor: pointer;*/
+/*    font-size: 1.2rem;*/
+/*}*/
+
+/*!* Add any additional styling as needed *!*/
+/*.modal-header .btnClose {*/
+/*    margin-top: 10px;*/
+/*    background: yellow;*/
+/*    border: 5px solid red;*/
+/*    font-size: 3.5rem;*/
+/*    cursor: pointer;*/
+/*    color: #333;*/
+/*    display: inline-block;*/
+/*    padding: 0;*/
+/*}*/
+
+
+
+/*.modal-gallery {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*    background: white;*/
+/*    padding: 20px;*/
+/*    width: 80%;*/
+/*    max-width: 400px; !* Уменьшил максимальную ширину для компактности *!*/
+/*    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);*/
 /*}*/
 
 /*.modal-overlay {*/
@@ -44,11 +133,23 @@
 /*    color: #333;*/
 /*}*/
 
+/*.modal-header button.btnClose {*/
+/*    background: none;*/
+/*    border: none;*/
+/*    font-size: 1.5rem;*/
+/*    cursor: pointer;*/
+/*    color: #333;*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    right: 10px;*/
+/*}*/
+
 /*.modal-body img {*/
 /*    width: 100%;*/
 /*    height: auto;*/
-/*    max-height: 400px;*/
+/*    max-height: 300px; !* Установим максимальную высоту для фиксированного размера *!*/
 /*    object-fit: contain;*/
+/*    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);*/
 /*}*/
 
 /*.modal-footer {*/
@@ -62,14 +163,13 @@
 /*    border: none;*/
 /*    padding: 8px 12px;*/
 /*    cursor: pointer;*/
+/*    font-size: 1.2rem;*/
 /*}*/
 
 /*.modal-footer button:disabled {*/
 /*    background: #ccc;*/
 /*    cursor: not-allowed;*/
 /*}*/
-
-/*!* Add any additional styling as needed *!*/
 
 
 
@@ -83,8 +183,8 @@
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
-    width: 80%;
-    max-width: 600px;
+    max-width: 90vw;
+    width: 400px; /* фиксированная ширина для больших экранов */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -114,12 +214,16 @@
     font-size: 1.5rem;
 }
 
-.modal-header button {
+.modal-header button.btnClose {
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #333;
+    font-weight: bold;
+    color: #b51010;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .modal-body img {
@@ -136,7 +240,7 @@
 }
 
 .modal-footer button {
-    background: #007bff;
+    background: #3ea408;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -144,14 +248,14 @@
     font-size: 1.2rem;
 }
 
-/* Add any additional styling as needed */
-.modal-header button {
-    margin-top: 10px;
-    background: yellow;
-    border: 5px solid red;
-    font-size: 3.5rem;
-    cursor: pointer;
-    color: #333;
-    display: inline-block;
-    padding: 0;
+.modal-footer button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Адаптивные стили */
+@media (max-width: 600px) {
+    .modal-gallery {
+        width: 90%;
+    }
 }

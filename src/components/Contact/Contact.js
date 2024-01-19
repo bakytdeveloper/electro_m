@@ -17,6 +17,7 @@ function Contact() {
 
     return (
         <section className="contact">
+            <hr/>
             <h2>Контакты</h2>
             <div className="contact-info">
                 <div className="phone">

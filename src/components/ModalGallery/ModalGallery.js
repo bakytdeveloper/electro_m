@@ -41,7 +41,7 @@ function ModalGallery({ isOpen, closeModal }) {
             <div className="modal-content">
                 <div className="modal-header">
                     <h2>Портфолио</h2>
-                    <button onClick={closeModal}>&#x2715;</button>
+                    <button className="btnClose" onClick={closeModal}>&#x2715;</button>
                 </div>
 
                 <div className="modal-body">
