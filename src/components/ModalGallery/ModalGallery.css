@@ -182,8 +182,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90vw;
-    width: 400px; /* Задайте ширину окна по своему усмотрению */
-    background: white;
+    width: 90%; /* Задайте ширину окна по своему усмотрению */
+    height: 90%;
+    background: #eeecec;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -205,10 +206,11 @@
 
 .modal-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #0278f6;
+    background-color: #0d9b03;
+    font-family: Luminari;
     color: white;
 }
 
@@ -228,6 +230,20 @@
     position: absolute;
     top: 20px;
     right: 10px;
+    transition: color 0.5s ease; /* Плавная анимация для изменения цвета фона */
+
+}
+
+.btnClose:hover {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #e94848;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-weight: bold;
 }
 
 .modal-body img {
@@ -244,17 +260,37 @@
 }
 
 .modal-footer button {
-    background: #007bff;
-    color: white;
+    background: none;
+    color: #940851;
     border: none;
     padding: 8px 12px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.5s ease; /* Плавная анимация для изменения цвета фона */
+
+}
+
+.modal-footer button:hover {
+    background: #c1f1ed;
+    color: #ea1010;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 .modal-footer button:disabled {
     background: #ccc;
     cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
 }
 
 /* Add any additional styling as needed */

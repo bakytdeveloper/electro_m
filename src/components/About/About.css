@@ -10,6 +10,8 @@
     font-weight: bold;
     color: dodgerblue;
     font-family: Luminari;
+    transition: color 0.3s ease; /* Плавная анимация для изменения цвета фона */
+
     transition: background-color 0.3s ease; /* Плавная анимация для изменения цвета фона */
 
 }
