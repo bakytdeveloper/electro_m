@@ -177,15 +177,15 @@
 
 
 .modal-gallery {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
     max-width: 90vw;
-    width: 400px; /* фиксированная ширина для больших экранов */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Задайте ширину окна по своему усмотрению */
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .modal-overlay {
@@ -200,47 +200,51 @@
 
 .modal-content {
     position: relative;
+
 }
 
 .modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #0278f6;
+    color: white;
 }
 
 .modal-header h2 {
     margin: 0;
     font-size: 1.5rem;
+
+
 }
 
-.modal-header button.btnClose {
+.btnClose {
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    font-weight: bold;
-    color: #b51010;
+    color: white;
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 10px;
 }
 
 .modal-body img {
     width: 100%;
-    height: auto;
-    max-height: 400px;
+    max-height: 70vh;
     object-fit: contain;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .modal-footer {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
 }
 
 .modal-footer button {
-    background: #3ea408;
+    background: #007bff;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -253,9 +257,5 @@
     cursor: not-allowed;
 }
 
-/* Адаптивные стили */
-@media (max-width: 600px) {
-    .modal-gallery {
-        width: 90%;
-    }
-}
+/* Add any additional styling as needed */
+

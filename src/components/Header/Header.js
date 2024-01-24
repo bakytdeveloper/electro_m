@@ -87,8 +87,8 @@ import React from 'react';
 import { FaPhone, FaWhatsapp } from 'react-icons/fa';
 import './Header.css'; // Создайте файл стилей Header.css
 
-function Header({ openModal }) {
-    const phoneNumber = '+1234567890'; // Замените этот номер телефона на ваш реальный номер
+function Header() {
+    const phoneNumber = '996701152020'; // Замените этот номер телефона на ваш реальный номер
 
     const handlePhoneCall = () => {
         window.location.href = `tel:${phoneNumber}`;
@@ -103,15 +103,15 @@ function Header({ openModal }) {
             <div className="overlay"></div>
             <div className="header-content">
                 <div className="title-quote">
-                    <h1>ОсОО "ЭНЕРГО ЭКСПРЕСС"</h1>
-                    <p>За нами, светлое будущее</p>
+                    <h1>ОсОО "<span>ЭНЕРГО</span> ЭКСПРЕСС"</h1>
+                    <p className="p-title">"За нами, светлое будущее"</p>
                 </div>
                 <nav className="nav-container">
                     <div className="contact-info">
                         <div className="phone">
-                            <FaPhone className="icon" />
+                            <FaPhone style={{fontSize: "22px"}} className="icon" />
                             <a style={{color: "white"}} href={`tel:${phoneNumber}`} onClick={handlePhoneCall}>
-                                {phoneNumber}
+                                +996 701 15 20 20
                             </a>
                         </div>
                         <div className="whatsapp" onClick={handleWhatsApp}>
@@ -119,14 +119,22 @@ function Header({ openModal }) {
                             <span style={{color: "white"}}>WhatsApp</span>
                         </div>
                     </div>
-                    <div className="btnPort">
-                        {/*<span>Наша Работа:</span>*/}
-                        <button  className="btnPortfolio" onClick={openModal}>
-                            <span className="portfolio"> Нажми и посмотри </span>
-                        </button>
-                    </div>
+                    {/*<div className="btnPort">*/}
+                    {/*    /!*<span>Наша Работа:</span>*!/*/}
+                    {/*    <button  className="btnPortfolio" onClick={openModal}>*/}
+                    {/*        Посмотрите портфолио*/}
+                    {/*        /!*<span className="portfolio"> Посмотрите портфолио </span>*!/*/}
+                    {/*    </button>*/}
+                    {/*</div>*/}
+
+
                 </nav>
+
+
+
             </div>
+
+
         </header>
     );
 }

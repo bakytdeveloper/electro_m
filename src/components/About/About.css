@@ -1,0 +1,26 @@
+.portfolio {
+    background: #46e5c1;
+    display: block;
+    position: absolute;
+    margin: 18px auto;
+    width: 100%;
+    height: auto;
+    top: 0;
+    padding: 10px 0;
+    font-weight: bold;
+    color: dodgerblue;
+    font-family: Luminari;
+    transition: background-color 0.3s ease; /* Плавная анимация для изменения цвета фона */
+
+}
+
+.portfolio:hover {
+    background: #3dec55;
+    color: #0c6ecd;
+
+}
+
+#about {
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+}

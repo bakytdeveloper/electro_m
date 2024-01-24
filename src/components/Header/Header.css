@@ -1,4 +1,73 @@
 
+/*!*.header {*!*/
+/*!*    position: relative;*!*/
+/*!*    height: 200px;*!*/
+/*!*    background: url('./../../images/header.jpg') center/cover;*!*/
+/*!*    color: white;*!*/
+/*!*    text-align: center;*!*/
+/*!*    display: flex;*!*/
+/*!*    flex-direction: column;*!*/
+/*!*    align-items: center;*!*/
+/*!*    justify-content: center;*!*/
+/*!*}*!*/
+
+/*!*.overlay {*!*/
+/*!*    position: absolute;*!*/
+/*!*    top: 0;*!*/
+/*!*    left: 0;*!*/
+/*!*    width: 100%;*!*/
+/*!*    height: 100%;*!*/
+/*!*    background: rgba(0, 0, 0, 0.5);*!*/
+/*!*}*!*/
+
+/*!*.header-content {*!*/
+/*!*    z-index: 1;*!*/
+/*!*}*!*/
+
+/*!*nav {*!*/
+/*!*    margin-top: 20px;*!*/
+/*!*    display: flex;*!*/
+/*!*    align-items: center;*!*/
+/*!*    justify-content: center;*!*/
+/*!*}*!*/
+
+/*!*.contact-info {*!*/
+/*!*    display: flex;*!*/
+/*!*    align-items: center;*!*/
+/*!*}*!*/
+
+/*!*nav button {*!*/
+/*!*    font-weight: bold;*!*/
+
+/*!*}*!*/
+/*!*.portfolio {*!*/
+/*!*    font-size: 25px;*!*/
+/*!*}*!*/
+
+/*!*nav a, nav button {*!*/
+/*!*    display: inline-block; !* Или display: inline; *!*!*/
+/*!*    color: white;*!*/
+/*!*    text-decoration: none;*!*/
+/*!*    margin: 0 10px;*!*/
+/*!*    font-size: 16px;*!*/
+/*!*}*!*/
+
+/*!*nav a:hover, nav button:hover, nav span:hover {*!*/
+/*!*    text-decoration: underline;*!*/
+/*!*}*!*/
+
+/*!*@media screen and (max-width: 600px) {*!*/
+/*!*    .header {*!*/
+/*!*        height: 250px;*!*/
+/*!*    }*!*/
+
+/*!*    nav {*!*/
+/*!*        flex-direction: column;*!*/
+/*!*    }*!*/
+/*!*}*!*/
+
+
+
 /*.header {*/
 /*    position: relative;*/
 /*    height: 200px;*/
@@ -9,6 +78,8 @@
 /*    flex-direction: column;*/
 /*    align-items: center;*/
 /*    justify-content: center;*/
+/*    width: 100%;*/
+/*    opacity: 1;*/
 /*}*/
 
 /*.overlay {*/
@@ -24,168 +95,394 @@
 /*    z-index: 1;*/
 /*}*/
 
-/*nav {*/
-/*    margin-top: 20px;*/
+/*.title-quote {*/
+/*    margin-bottom: 20px;*/
+
+/*    !*background: #dddddd;*!*/
+/*}*/
+/*.title-quote h1 {*/
+/*    font-family: "American Typewriter";*/
+/*}*/
+
+/*.nav-container {*/
+/*    margin-top: 15px;*/
 /*    display: flex;*/
+/*    flex-direction: column;*/
 /*    align-items: center;*/
 /*    justify-content: center;*/
+/*    !*height: 60%;*!*/
+
+/*    !*background: #007bff;*!*/
 /*}*/
 
 /*.contact-info {*/
 /*    display: flex;*/
 /*    align-items: center;*/
+/*    margin-bottom: 15px;*/
+
+/*    !*background: red;*!*/
 /*}*/
+
+/*.phone,*/
+/*.whatsapp {*/
+/*    cursor: pointer;*/
+/*    margin: 0 10px;*/
+/*    !*background: lightblue;*!*/
+/*}*/
+
+/*.icon {*/
+/*    font-size: 1.5rem;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*!*.btnPortfolio {*!*/
+/*!*    !*background: #22090c;*!*!*/
+
+/*!*    margin-top: 80px;*!*/
+/*!*    z-index: 1;*!*/
+/*!*    !*border: 2px solid red;*!*!*/
+/*!*    padding: 0;*!*/
+/*!*    box-sizing: content-box;*!*/
+/*!*    width: 450px;*!*/
+
+/*!*}*!*/
+
+/*.btnPortfolio {*/
+/*    margin: 0 auto;*/
+/*    margin-top: 80px;*/
+/*    z-index: 1;*/
+/*    max-width: 230px;*/
+/*    padding: 4px;*/
+/*    border: 2px solid #04048a;*/
+/*    background: #007bff;*/
+/*    border-radius: 25px;*/
+/*}*/
+
+/*.btnPortfolio:hover {*/
+
+/*    max-width: 227px;*/
+/*    padding: 4px;*/
+/*    border: 2px solid blue;*/
+/*    background: #4897ec;*/
+/*    color: #333333;*/
+/*}*/
+/*.p-title {*/
+/*    color: #faea95;*/
+/*    font-weight: bold;*/
+/*    font-family: "Playfair Display";*/
+/*}*/
+
 
 /*nav button {*/
 /*    font-weight: bold;*/
-
+/*    margin-top: 30px; !* Увеличьте или уменьшите это значение по необходимости *!*/
 /*}*/
+
 /*.portfolio {*/
 /*    font-size: 25px;*/
+/*    margin-top: 10px; !* Увеличьте или уменьшите это значение по необходимости *!*/
 /*}*/
 
-/*nav a, nav button {*/
-/*    display: inline-block; !* Или display: inline; *!*/
+/*nav a,*/
+/*nav span {*/
+/*    display: inline-block;*/
 /*    color: white;*/
 /*    text-decoration: none;*/
 /*    margin: 0 10px;*/
 /*    font-size: 16px;*/
 /*}*/
 
-/*nav a:hover, nav button:hover, nav span:hover {*/
+/*nav a:hover,*/
+/*nav span:hover {*/
 /*    text-decoration: underline;*/
 /*}*/
 
 /*@media screen and (max-width: 600px) {*/
 /*    .header {*/
+/*        width: 460px;*/
 /*        height: 250px;*/
 /*    }*/
 
-/*    nav {*/
+/*    .title-quote h1 {*/
+/*        font-size: 25px;*/
+/*    }*/
+
+/*    .btnPortfolio {*/
+/*        margin: 0 auto;*/
+/*        margin-top: 95px;*/
+/*        z-index: 1;*/
+/*        width: 450px;*/
+/*        padding: 0;*/
+/*    }*/
+
+/*    .nav-container {*/
 /*        flex-direction: column;*/
+/*    }*/
+
+/*    .contact-info {*/
+/*        margin-bottom: 0;*/
 /*    }*/
 /*}*/
 
 
 
+
+
+/* Стиль для общего контейнера заголовка */
 .header {
-    position: relative;
-    height: 200px;
-    background: url('./../../images/header.jpg') center/cover;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    /*position: fixed; !* фиксированное положение *!*/
+    top: 0; /* координата сверху */
+    left: 0; /* координата слева */
+    right: 0; /* координата справа */
+    /* Задаем фоновое изображение, которое я нашел по запросу "фон для сайта электромонтажной компании" */
+    background-image: url('./header.jpeg');
+    /* Повторяем изображение по горизонтали и вертикали */
+    background-repeat: repeat;
+    /* Центрируем изображение по обоим осям */
+    background-position: center;
+    /* Растягиваем изображение на всю ширину и высоту контейнера */
+    background-size: cover;
+    /* Добавляем небольшой отступ сверху и снизу */
+    padding: 15px 0 15px 0;
+
 }
 
+/* Стиль для наложения полупрозрачного слоя на фоновое изображение */
 .overlay {
+    /* Задаем абсолютное позиционирование, чтобы слой был поверх изображения */
     position: absolute;
+    /* Задаем координаты слоя по углам контейнера */
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    /* Задаем черный цвет фона с прозрачностью 50% */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Стиль для контента заголовка, который будет поверх слоя */
 .header-content {
-    z-index: 1;
+    /* Задаем относительное позиционирование, чтобы контент был поверх слоя */
+    position: relative;
+    /* Центрируем контент по горизонтали */
+    margin: 0 auto;
+    /* Задаем максимальную ширину контента */
+    max-width: 1200px;
 }
 
+/* Стиль для блока с названием компании и девизом */
 .title-quote {
-    margin-bottom: 20px;
-
-    /*background: #dddddd;*/
+    /* Выравниваем текст по центру */
+    text-align: center;
+    /* Задаем белый цвет текста */
+    color: white;
 }
 
+/* Стиль для названия компании */
+.title-quote h1 {
+    /* Задаем жирный шрифт */
+    font-weight: bold;
+    /* Задаем желтый цвет текста */
+    color: #f3f32d;
+    font-family: Marker Felt, fantasy;
+}
+
+/* Стиль для названия компании */
+.title-quote h1 span {
+    /* Задаем жирный шрифт */
+    font-weight: bold;
+
+    font-family: Marker Felt, fantasy;
+    color: #ec5c39;
+}
+
+/* Стиль для девиза компании */
+.title-quote p {
+    /* Задаем курсивный шрифт */
+    font-style: italic;
+    /* Задаем размер шрифта */
+    font-family: "American Typewriter";
+    font-size: 24px;
+}
+
+/* Стиль для блока с контактной информацией и кнопкой портфолио */
 .nav-container {
-    margin-top: 15px;
+    /* Задаем гибкий контейнер, чтобы элементы выстраивались в ряд */
     display: flex;
-    flex-direction: column;
+    /* Выравниваем элементы по центру по вертикали */
     align-items: center;
+    /* Распределяем элементы по краям по горизонтали */
     justify-content: center;
-    /*height: 60%;*/
-
-    /*background: #007bff;*/
+    /* Добавляем небольшой отступ сверху */
+    margin-top: 20px;
 }
 
+/* Стиль для блока с контактной информацией */
 .contact-info {
+    /* Задаем гибкий контейнер, чтобы элементы выстраивались в ряд */
     display: flex;
+    /* Выравниваем элементы по центру по вертикали */
     align-items: center;
+}
+
+/* Стиль для блока с номером телефона */
+.phone {
+    /* Задаем гибкий контейнер, чтобы элементы выстраивались в ряд */
+    display: flex;
+    /* Выравниваем элементы по центру по вертикали */
+    align-items: center;
+    /* Добавляем небольшой отступ справа */
+    margin-right: 20px;
+    margin-top: 11px!important;
+
+}
+
+/* Стиль для иконки телефона */
+.phone .icon {
+    /* Задаем белый цвет иконки */
+    color: white;
+    /* Добавляем небольшой отступ справа */
+    margin-right: 10px;
     margin-bottom: 10px;
-
-    /*background: red;*/
 }
 
-.phone,
+/* Стиль для ссылки на номер телефона */
+.phone a {
+    /* Убираем подчеркивание ссылки */
+    text-decoration: none;
+    /* Задаем белый цвет текста */
+    color: white;
+    margin-bottom: 10px;
+}
+
+.phone a:hover {
+    color: #0ff526!important;
+}
+
+
+/* Стиль для блока с WhatsApp */
 .whatsapp {
+    /* Задаем гибкий контейнер, чтобы элементы выстраивались в ряд */
+    display: flex;
+    /* Выравниваем элементы по центру по вертикали */
+    align-items: center;
+    /* Добавляем небольшой отступ слева */
+    margin-left: 20px;
+    /* Добавляем курсор в виде руки при наведении */
     cursor: pointer;
-    margin: 0 10px;
-    /*background: lightblue;*/
 }
 
-.icon {
-    font-size: 1.5rem;
-    margin-right: 5px;
+/* Стиль для иконки WhatsApp */
+.whatsapp .icon {
+    /* Задаем зеленый цвет иконки */
+    color: limegreen;
+    /* Добавляем небольшой отступ справа */
+    margin-right: 10px;
 }
 
+/* Стиль для текста WhatsApp */
+.whatsapp span {
+    /* Задаем белый цвет текста */
+    color: white;
+}
+
+.whatsapp span:hover {
+    /* Задаем белый цвет текста */
+    color: #0ff526 !important;
+}
+
+/*!* Стиль для кнопки портфолио *!*/
 /*.btnPortfolio {*/
-/*    !*background: #22090c;*!*/
-
-/*    margin-top: 80px;*/
-/*    z-index: 1;*/
-/*    !*border: 2px solid red;*!*/
-/*    padding: 0;*/
-/*    box-sizing: content-box;*/
-/*    width: 450px;*/
+/*    !* Задаем жирный шрифт *!*/
+/*    font-weight: bold;*/
+/*    !* Задаем размер шрифта *!*/
+/*    font-size: 18px;*/
+/*    !* Задаем белый цвет текста *!*/
+/*    color: white;*/
+/*    !* Задаем синий цвет фона *!*/
+/*    background-color: dodgerblue;*/
+/*    !* Задаем скругленные углы *!*/
+/*    border-radius: 10px;*/
+/*    !* Убираем рамку *!*/
+/*    border: none;*/
+/*    !* Задаем высоту кнопки *!*/
+/*    height: 40px;*/
+/*    !* Задаем ширину кнопки *!*/
+/*    width: 230px;*/
+/*    !* Добавляем курсор в виде руки при наведении *!*/
+/*    cursor: pointer;*/
 
 /*}*/
 
-.btnPortfolio {
-    margin: 0 auto;
-    margin-top: 80px;
-    z-index: 1;
-    width: 450px;
-    padding: 0;
-    box-sizing: content-box;
-}
-
-
-nav button {
-    font-weight: bold;
-    margin-top: 30px; /* Увеличьте или уменьшите это значение по необходимости */
-}
-
-.portfolio {
-    font-size: 25px;
-    margin-top: 10px; /* Увеличьте или уменьшите это значение по необходимости */
-}
-
-nav a,
-nav span {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 16px;
-}
-
-nav a:hover,
-nav span:hover {
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 600px) {
+/* Добавляем медиа-запросы для адаптивности - когда ширина экрана 768 пикселей или меньше, меняем расположение элементов */
+@media screen and (max-width: 768px) {
     .header {
-        height: 250px;
+        width: 110%;
+
+    }
+    /* Делаем контент заголовка блочным, чтобы элементы выстраивались в колонку */
+    .header-content {
+        display: block;
     }
 
+    /* Делаем блок с контактной информацией и кнопкой портфолио блочным, чтобы элементы выстраивались в колонку */
     .nav-container {
-        flex-direction: column;
+        display: block;
     }
 
+    /* Делаем блок с номером телефона и WhatsApp блочным, чтобы элементы выстраивались в колонку */
     .contact-info {
-        margin-bottom: 0;
+        display: block;
+    }
+
+    /* Добавляем отступ сверху и снизу для блока с номером телефона */
+    .phone {
+        margin: 10px 0;
+
+    }
+
+    /* Добавляем отступ сверху и снизу для блока с WhatsApp */
+    .whatsapp {
+        margin: 13px 0;
+    }
+
+    /* Добавляем отступ сверху для кнопки портфолио */
+    .btnPortfolio {
+        margin-top: 20px;
+    }
+
+    .title-quote h1 {
+        font-size: 25px;
+    }
+}
+
+
+
+/* Делаем блок с контактной информацией и кнопкой портфолио гибким, чтобы элементы выстраивались в ряд */
+.nav-container {
+    display: flex;
+}
+
+/* Добавляем отступ справа для блока с контактной информацией */
+.contact-info {
+    margin-right: 20px;
+}
+
+/* Добавляем медиа-запрос для адаптивности - когда ширина экрана 768 пикселей или меньше, меняем расположение элементов */
+@media screen and (max-width: 768px) {
+    /* Делаем блок с контактной информацией и кнопкой портфолио блочным, чтобы элементы выстраивались в колонку */
+    .nav-container {
+        display: block;
+    }
+
+    /* Убираем отступ справа для блока с контактной информацией */
+    .contact-info {
+        margin-right: 0;
+    }
+
+    /* Добавляем отступ сверху для кнопки портфолио */
+    .btnPortfolio {
+        margin-top: 20px;
     }
 }

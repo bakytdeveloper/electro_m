@@ -28,7 +28,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
-import About from './components/About';
+import About from './components/About/About';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 import ModalGallery from './components/ModalGallery/ModalGallery';
@@ -48,10 +48,11 @@ function App() {
 
     return (
         <div className="container">
-            <Header openModal={openModal} />
+            <Header />
 
             <Services />
             <Features />
+            <About  openModal={openModal} />
             <Contact />
             <ModalGallery isOpen={modalIsOpen} closeModal={closeModal} />
         </div>

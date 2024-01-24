@@ -40,13 +40,16 @@ function ModalGallery({ isOpen, closeModal }) {
         >
             <div className="modal-content">
                 <div className="modal-header">
-                    <h2>Портфолио</h2>
-                    <button className="btnClose" onClick={closeModal}>&#x2715;</button>
+                    <h2 >Портфолио</h2>
+                    <button className="btnClose" onClick={closeModal}>
+                        &#x2715;
+                    </button>
                 </div>
 
                 <div className="modal-body">
                     <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
                 </div>
+
                 <div className="modal-footer">
                     <button onClick={goToPrevSlide}>&lt;</button>
                     <button onClick={goToNextSlide}>&gt;</button>

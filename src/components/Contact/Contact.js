@@ -1,9 +1,10 @@
 import React from 'react';
 import './Contact.css'; // Создайте файл стилей для этого компонента
 import { FaPhone, FaWhatsapp } from 'react-icons/fa';
+import wap from './../../images/whatsapp.png';
 
 function Contact() {
-    const phoneNumber = '+996700517582'; // Замените этот номер телефона на ваш реальный номер
+    const phoneNumber = '996700517582'; // Замените этот номер телефона на ваш реальный номер
 
     const handlePhoneCall = () => {
         window.location.href = `tel:${phoneNumber}`;
@@ -21,14 +22,15 @@ function Contact() {
             <h2>Контакты</h2>
             <div className="contact-info">
                 <div className="phone">
-                    <FaPhone className="icon" />
+                    <FaPhone style={{width: "22px", height: "22px", color: "limegreen"}} className="icon" />
                     <a href={`tel:${phoneNumber}`} onClick={handlePhoneCall}>
-                        {phoneNumber}
+                        +996 701 15 20 20
                     </a>
                 </div>
                 <div className="whatsapp" onClick={handleWhatsApp}>
-                    <FaWhatsapp className="icon" />
-                    <span>WhatsApp</span>
+                    <img src={wap} style={{width: "31px", marginTop: "-9px"}} className="icon" />
+                    {/*<FaWhatsapp className="icon" />*/}
+                    <span style={{marginTop: "-10px"}}>WhatsApp</span>
                 </div>
             </div>
         </section>
